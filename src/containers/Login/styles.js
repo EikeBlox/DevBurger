@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import BackgroundLogin from '../../../assets/Background-login.svg'
+import BackgroundLogin from '../../assets/Background-login.jpg'
+import Background from '../../assets/Background.jpg'
 
 export const Container = styled.div `
    display: flex;
@@ -7,16 +8,83 @@ export const Container = styled.div `
    width: 100vw;
 `;
 
-export const LeftContainer = styled.div ``;
+export const LeftContainer = styled.div `
+    background: url('${BackgroundLogin}');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    max-width: 50%;
 
-export const RightContainer = styled.div ``;
+    img {
+        width: 80%;
+    }
+`;
 
-export const Title = styled.h2 ``;
+export const RightContainer = styled.div `
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
-export const Form = styled.div ``;
+    height: 100%;
+    width: 100%;
+    max-width: 50%;
+    background: url('${Background}');
+    background-color: #1e1e1e;
 
-export const InputContainer = styled.h2 ``;
+    p {
+        color: #ffffff;   
+        font-size: 18px; 
+        font-weight: 800;
 
-export const Link = styled.a ``;
+        a { 
+            text-decoration: underline;
+        }
+    }
+`;
 
-export const Button = styled.button ``;
+export const Title = styled.h2 `
+    font-family: "Road Rage", serif;
+    font-size: 40px;
+    color: #ffffff;
+
+    span {
+        color: #9758a6;
+    }
+`;
+
+export const Form = styled.div `
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+`;
+
+export const InputContainer = styled.div `
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+
+    input {
+        width: 100%;
+        border: none;
+        height: 52px;
+        border-radius: 5px;
+        padding: 0 16px;
+    }
+
+    label {
+        font-size: 18px;
+        font-weight: 600;
+        color: #ffffff;
+    }
+`;
+
+export const Button = styled.button `
+
+`;

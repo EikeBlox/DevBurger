@@ -1,5 +1,12 @@
-import { Button, Container, Form, InputContainer, LeftContainer, Link, RightContainer, Title } from './styles'
-import Logo from '../../'
+import Logo from '../../assets/Logo.png'
+import { Button, 
+    Container, 
+    Form, 
+    InputContainer, 
+    LeftContainer, 
+    RightContainer, 
+    Title,
+} from './styles'
 
 export function Login(){
     return (
@@ -7,12 +14,13 @@ export function Login(){
             <Container>
                <LeftContainer>
                     <h1>Login</h1>
-                    <img scr={Logo} alt="logo-devburger"></img>
+                    <img src={Logo} alt="logo-devburger"></img>
                </LeftContainer>
                <RightContainer>
                     <Title>
-                        Olá, seja bem-vindo ao <span>Dev Burguer!</span> Acesse com seu
-                        <span>Login e senha</span>.
+                        Olá, seja bem-vindo ao <span>Dev Burguer!</span>
+                        <br/>
+                        Acesse com seu<span> Login e senha</span>.
                     </Title>
                     <Form>
                         <InputContainer>
@@ -24,9 +32,9 @@ export function Login(){
                             <label>Senha</label>
                             <input type="password"></input>
                         </InputContainer>
-                        <Link>Esqueci minha senha.</Link>
+                       
                         <Button>Entrar</Button>
-                        <Link>Não possui conta? Clique aqui.</Link>
+                        <p>Não possui conta? <a>Clique aqui.</a></p>
                     </Form>
                </RightContainer>
             </Container>
